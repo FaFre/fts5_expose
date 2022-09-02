@@ -10,6 +10,8 @@ equivalent to `tokenizer=` in the fts5 vtab creation.
 
 For more information see https://www.sqlite.org/fts5.html#tokenizers
 
+Return value is a JSON array of processed tokens. Make sure you compile SQLite with `json1` support.
+
 Example:
 ```bash
 sqlite> .load 'fts5_expose.so'
